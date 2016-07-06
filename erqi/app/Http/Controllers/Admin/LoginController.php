@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Gregwar\Captcha\CaptchaBuilder;
-use Session,
-    DB,
-    Hash;
+use Session,DB,Hash;
+    
+   
 
 class LoginController extends Controller {
 
@@ -17,8 +17,9 @@ class LoginController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
-        return view("admin.login.index");
+    public function index(Request $request) {
+        $data = $request->old();
+        return view("admin.login.index",compact("data"));
     }
 
     /**
@@ -26,13 +27,58 @@ class LoginController extends Controller {
      *
      * @return \Illuminate\Http\Response
      */
-    public function create() {
-        //
-    }
-
-    public function logTodo() {
-        var_dump($_POST);
-        return "nihao ";
+   
+    public function logTodo(Request $request) 
+     {
+//           
+//        dd($request->all());//debug
+        //接收数据
+        $data = $request->all();
+        //检验验证码
+//        dd($data);
+//        dd(session("code"));
+//        dd($data["code"]);
+//       dd(session("code")!= $data["code"]);
+        if(session("code")!= $data["code"])
+        { 
+           
+            $request->flash();
+            return back()->with(["info"=>"验证码错误"]);
+        }
+        //有效性验证
+        
+        $this->validate($request,[
+            "uname" => "required",
+            "password" => "required|between:6,15",
+            
+        ],[
+            "uname.required" =>"账号未填写",
+            "password.required"=>"密码不能为空",
+            "password.between" =>"密码长度应为6-15位"
+            
+        ]);
+        //真实性验证
+        $userRec=DB::table("user")->where("uname",$data["uname"])->first();
+//        dd($userRec);
+        if(empty($userRec))
+        { 
+            
+            $request->flash();
+            return back()->with(["info"=>"账号不存在"]);
+        }else if(!Hash::check($data["password"],$userRec->password))      
+        {
+//            dd($data);//debug
+//             dd(Hash::check($data["password"],$userRec->password));//debug
+            $request->flash();
+            return back()->with(["info"=>"密码错误"]);
+        }else
+        {//返回解果，将用户状态写入session
+////            dd($userRec);//debug
+           session(["userData" => $userRec]);
+//           dd(session("userData"));//debug
+           return redirect("/Admin");
+        }
+   
         
     }
 
@@ -51,56 +97,12 @@ class LoginController extends Controller {
         header('Content-Type: image/jpeg');
         $builder->output();
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request) {
-        //
+        //退出登录
+    public function logout(){
+        //销毁session
+        Session::forget("userData");
+        return redirect("/Admin");
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id) {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id) {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id) {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id) {
-        //
-    }
 
 }
