@@ -1,0 +1,80 @@
+<?php echo $__env->make("admin.layout.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<link type="text/css" rel="stylesheet" href="<?php echo e(asset('/bootstrap/css/bootstrap.css')); ?>" />
+<div style="color:blueviolet;">
+    <form action="<?php echo e(url('/Admin/linelist')); ?>" method="post" name="fm">
+        
+            <input type="hidden"  name="_token" value="<?php echo e(csrf_token()); ?>">
+            <p>
+                <input type="text" name="keyword" value="<?php echo e($keyword); ?>" placeholde="请输入账号或昵称">
+                <input type="submit" value="查看">
+            </p>
+    </form>
+</div>
+<div class="center">
+    
+
+
+
+    <div class="tableMain" >
+        <table class="right-table" width="99%"  border="0px" cellpadding="0" align="center" cellspacing="0" >
+            <tbody >
+
+                <tr >
+                    <th>ID</th>
+                    <th>账号</th>
+                    <th>路线名称</th>
+                    <th>出发时间</th>
+                    <th>出发地点</th>
+                    <th>报名人数</th>
+                    <th>预订人名</th>
+                    <th>配送地址</th>
+                    <th>订单金额</th>
+                    <th>添加时间</th>
+                    <th>订单状态</th>
+                    
+                    
+                </tr>
+
+                
+               
+                <!--style="text-align:center"-->
+
+                
+                <?php foreach($orders as $order): ?>
+                <tr>
+                    <td><?php echo e($order->line_list_id); ?></td>
+                    <td><?php echo e($order->uname); ?></td>
+                    <td><?php echo e($order->line_name); ?></td>
+                    <td><?php echo e($order->go_time); ?></td>
+                    <td><?php echo e($order->start_city); ?></td>
+                    <td><?php echo e($order->go_num); ?></td>
+                    <td><?php echo e($order->order_name); ?></td>
+                    <td><?php echo e($order->order_add); ?></td>
+                    <td><?php echo e($order->total_pri); ?></td>
+                    <td><?php echo e($order->addtime); ?></td>
+                    <td>
+                        
+                        
+                            <input type="radio" name="status.<?php echo e($order->line_id); ?>" line_list_id="<?php echo e($order->line_list_id); ?>" value ="未付款" <?php if($order->status == "未付款"): ?> checked <?php endif; ?>>未付款
+                            <input type="radio" name="status.<?php echo e($order->line_id); ?>" line_list_id="<?php echo e($order->line_list_id); ?>" value ="已付款" <?php if($order->status == "已付款"): ?> checked <?php endif; ?>>已付款
+                            <input type="radio" name="status.<?php echo e($order->line_id); ?>" line_list_id="<?php echo e($order->line_list_id); ?>" value =="已完成" <?php if($order->status == "已完成"): ?> checked <?php endif; ?>>已完成
+                        
+                        
+                        
+                       
+                    </td>
+                    
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <p>
+            
+        </p> 
+    </div> 
+
+          
+</div>
+<script src="/js/admin/order_index.js"></script>
+ 
+<?php echo $__env->make("admin.layout.foot", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

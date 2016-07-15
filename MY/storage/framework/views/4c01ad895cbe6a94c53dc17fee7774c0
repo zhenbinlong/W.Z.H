@@ -1,0 +1,56 @@
+<?php echo $__env->make("admin.layout.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<link type="text/css" rel="stylesheet" href="<?php echo e(asset('/bootstrap/css/bootstrap.css')); ?>" />
+<script type="text/javascript" src="<?php echo e(asset('/plugins/wbox/mapapi.js')); ?>"></script> 
+<script type="text/javascript" src="<?php echo e(asset('/plugins/wbox/wbox.js')); ?>"></script> 
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('/plugins/wbox/wbox/wbox.css')); ?>" />
+<div style="color:blueviolet;">
+    
+</div>
+<div class="center">
+    
+
+
+
+    <div class="tableMain" >
+        <form <div  method="post" action="<?php echo e(url('/Admin/rule/multi')); ?>">
+        <table  class="right-table" width="99%"  border="0px" cellpadding="0" align="center" cellspacing="0" >
+            <tbody >
+
+                <tr >
+                    <th>ID</th>
+                    <th>权限</th>
+                    <th>名称</th>
+                    <th>状态</th>
+                    
+                    <th id="clearTDrightBorder">操作</th>
+                </tr>
+                <?php foreach($rules as $rule): ?>
+                <tr>
+                    <td><input type="checkbox" name="rules[]" value="<?php echo e($rule->id); ?>">&nbsp;<?php echo e($rule->id); ?></td>
+                    <td><?php echo e($rule->name); ?></td>
+                    <td><?php echo e($rule->title); ?></td>
+                    <td><?php echo $rule->status == 1 ? "有效":"<font color='red'>禁用</font>"; ?></td>
+                    <td><a class="editRule" href="javascript:void 0;" rule="<?php echo e($rule->id); ?>">编辑</a></td>
+                </tr>
+               <?php endforeach; ?>
+                
+
+                
+                
+            </tbody>
+        </table>
+        
+            <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>" />
+            <p>
+                <input style="color:blueviolet;" type="submit" name="submit" value="选中有效" />
+                <input style="color:blueviolet;" type="submit" name="submit" value="选中禁用" />
+                <input style="color:blueviolet;" type="submit" name="submit" value="选中删除" />
+            </p>
+        </form>
+    </div> 
+
+          
+</div>
+<script src="<?php echo e(asset('js/admin/admin_rule_index.js')); ?>"></script>
+ 
+<?php echo $__env->make("admin.layout.foot", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

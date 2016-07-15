@@ -1,0 +1,99 @@
+<?php echo $__env->make("home.common.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<div class="uc_mainnr">
+    <h3 class="uc_miantit">
+        <form action="/order/list" method="post" enctype="application/x-www-form-urlencoded">
+            <input class="validationBinded" name="_token" value="<?php echo e(csrf_token()); ?>" type="hidden">                    <span>我的订单</span>
+            <div class="order_search">
+                <input class="validationBinded" placeholder="输入订单号码或商品名称进行搜索" name="searchValue" type="text">
+                <a class="btn searchOrder">搜索</a>
+            </div>
+        </form>
+    </h3>
+    <div class="uc_nrlist">
+
+        <div class="user_visa_order ST M_bt20 order_box">
+
+            <div class="box Mbot20">
+
+                <div class="hd">
+                    <ul>
+                        <li style="float:left">订单号：<?php echo e($data->line_id); ?>&nbsp;&nbsp;&nbsp;</li> 
+                        <li style="float:left">成交时间：<?php echo e($data->addtime); ?></li>
+                        <li class="fr" style="float:right">iTour旅行网</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="nr">
+                    <table border="1" cellpadding="0" cellspacing="0" align="center" width="820">
+
+                        <tbody>
+                            <tr>
+                                <td class="bor" bgcolor="#FFFFFF" width="370">
+                                    <ul>
+                                        <li class="tit">
+
+                                            <a class="title_1837317" href="" target="_blank"> <img src="/tw_80x60.jpg" width="50">
+                                                <span class="text  YH"><?php echo e($data->line_name); ?></span></a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td class="bor wc" align="center" valign="middle" width="120"><?php echo e($data->status); ?>                                     <br>
+                                </td>
+
+                                <td class="bor dd" data-order-sn="1837317"  align="center" valign="middle" width="120">                              <?php echo e($data->line_pri); ?>
+
+
+
+                                    <a href="" target="_blank">订单详情</a> <br>
+
+
+
+
+
+                                    <!-- 申请退款 -->
+                                    <!--                                                     <a class="sqtk sqtk_btn" href="javascript:void(0)" data-type="submit">申请退款</a> -->
+
+                                </td>
+                                <td rowspan="2" class="bor price" align="center" valign="middle" width="120"><span>¥<?php echo e($data->total_pri); ?></span><br>
+                                        <a href="" class="New_btn btn_c c1">立即支付</a>
+
+                                </td>
+
+                            </tr>
+                        </tbody></table>
+                    
+                </div>
+                <!--  评论弹框 -->
+    <div class="BC_layer YH" id="Popup" style="display: block;">
+        <div class="layer_frame">
+            <div class="theme_01 w_610">
+                <div class="layer_hd clearfix "><span class="layer_title">评论</span> <a class="layer_close" href="#"></a></div>
+                <div class="L_c_comments M_top20">
+                    <div class="forms M_top20">
+                        <h3>商品名称：<span>美国旅游签证[北京领区]</span></h3>
+                        <div class="radiobox">
+                            <label><input name="grade" value="1" checked="checked" type="radio">非常好</label>
+                            <label><input name="grade" value="2" type="radio">好</label>
+                            <label><input name="grade" value="3" type="radio">有待提高</label>
+                        </div>
+                        <textarea class="Bc_input validationBinded" placeholder="其他旅行者需要您的建议哦" id="comment" name="comment" maxlength="500"></textarea>
+                        <input class="validationBinded" id="productId" name="productId" value="" type="hidden"><!-- 商品ID隐藏域 -->
+                        <input class="validationBinded" id="orderId" name="orderId" value="" type="hidden"><!-- 订单ID隐藏域 -->
+                        <p>500字</p>
+                        <a href="javascript:void(0)" class="New_btn btn_d d2 YH" id="addComment">发表评论</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  评论弹框 -->
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<?php echo $__env->make("home.common.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

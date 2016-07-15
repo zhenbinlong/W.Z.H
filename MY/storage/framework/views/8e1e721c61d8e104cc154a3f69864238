@@ -1,0 +1,44 @@
+<?php echo $__env->make("admin.layout.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<link type="text/css" rel="stylesheet" href="<?php echo e(asset('/bootstrap/css/bootstrap.css')); ?>" />
+
+<div class="center">
+    
+
+
+
+    <div class="tableMain" >
+        <table  class="right-table" width="99%"  border="0px" cellpadding="0" align="center" cellspacing="0" >
+            <tbody >
+
+                <tr >
+                    <th>D_ID</th>
+                    <th>类名</th>
+                    <th>父类</th>
+                    
+                    <th>路径</th>
+                    <th>是否导航</th>
+                    <th id="clearTDrightBorder">操作</th>
+                </tr>
+                <?php foreach($categories as $cate): ?>
+                <tr>
+                    <td><?php echo e($cate->d_id); ?></td>
+                    <td><?php echo e($cate->cname); ?></td>
+                    <td><?php echo e($cate->pid); ?></td>
+                    <td><?php echo e($cate->path); ?></td>
+                    <td><input type="radio" d_id="<?php echo e($cate->d_id); ?>" name="isNav_<?php echo e($cate->d_id); ?>" value="y" <?php if($cate->isNav == "y"): ?> checked <?php endif; ?> />是、否<input type="radio" name="isNav_<?php echo e($cate->d_id); ?>"d_id="<?php echo e($cate->d_id); ?>" value="n" <?php if($cate->isNav == "n"): ?> checked <?php endif; ?> /></td>
+                    <td>[<a href="/Admin/category/child/<?php echo e($cate->d_id); ?>">添加子类</a>]&nbsp; [<a href="/Admin/category/<?php echo e($cate->d_id); ?>/edit">编辑</a> 
+            <?php if(!$cate->hasChild): ?><a href="/Admin/category/delete/<?php echo e($cate->d_id); ?>">删除</a><?php endif; ?>]</td>
+                 
+                         
+                </tr>
+                <?php endforeach; ?>
+             </tbody>
+        </table>
+        
+    </div> 
+
+          
+</div>
+
+ <script src="/js/admin/category_index.js"></script>
+<?php echo $__env->make("admin.layout.foot", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

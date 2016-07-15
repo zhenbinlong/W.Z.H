@@ -1,0 +1,62 @@
+<?php echo $__env->make("admin.layout.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<link type="text/css" rel="stylesheet" href="<?php echo e(asset('/bootstrap/css/bootstrap.css')); ?>" />
+<div style="color:blueviolet;">
+    <form action="<?php echo e(url('/Admin/user')); ?>" method="post" name="fm">
+        
+            <input type="hidden"  name="_token" value="<?php echo e(csrf_token()); ?>">
+            <input type="hidden" name="_method" value="PUT" />
+            
+    </form>
+</div>
+<div class="center">
+    
+
+
+
+    <div class="tableMain" >
+        <table  class="right-table" width="99%"  border="0px" cellpadding="0" align="center" cellspacing="0" >
+            <tbody >
+
+                <tr >
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>权限</th>
+                    
+                    <th id="clearTDrightBorder">操作</th>
+                </tr>
+                <?php foreach($groups as $group): ?>
+                <tr>
+                    <td><?php echo e($group->id); ?></td>
+                    <td><?php echo e($group->title); ?></td>
+                    <td>
+                      <?php foreach($rules as $key=>$rule): ?>
+                        <?php if($key%7==0): ?><p><?php endif; ?>
+                            <?php if(in_array($rule->id,explode(",",$group->rules))): ?>
+                            <input type="checkbox" groupid="<?php echo e($group->id); ?>" name="rule" value="<?php echo e($rule->id); ?>" checked><?php echo e($rule->title); ?>
+
+                            <?php else: ?>
+                            <input type="checkbox" groupid="<?php echo e($group->id); ?>" name="rule" value="<?php echo e($rule->id); ?>"><?php echo e($rule->title); ?>
+
+                        <?php endif; ?>
+                        <?php if($key%7== 6): ?></p><?php endif; ?>
+                      <?php endforeach; ?>
+                    </td>
+                    <td><a href="<?php echo e(url('/Admin/group').'/'.$group->id."/edit"); ?>">编辑</a> <a href="<?php echo e(url('/Admin/group/delete').'/'.$group->id); ?>">删除</a></td>
+                </tr>
+                <?php endforeach; ?>
+                
+               
+                
+
+                
+                
+            </tbody>
+        </table>
+        
+    </div> 
+
+          
+</div>
+<script src="/js/admin/admin_group_index.js"></script>
+ 
+<?php echo $__env->make("admin.layout.foot", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,0 +1,73 @@
+<?php echo $__env->make("home.common.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+<!--右侧主内容-->
+<div class="uc_mainnr">
+    <h3 class="uc_miantit">
+        <span class="span">基本信息</span>
+        <div class="uclist_btn">
+        </div>
+    </h3>
+    <!-- 内容列表 -->
+    <div class="uc_nrlist">
+        <!--基本信息 -->
+        <!--修改前-->
+        <div class="box5_cont bgc_white" id="formeditbox">
+            <div class="forms BC_ValidationFormBox">
+                <form action="" method="post">
+                    <input class="validationBinded" name="_token" value="PbG4Y1sVQ2VVKc7VkWfRccMK6IDDYpK8EatE0Z92" type="hidden">              <dl class="item_nickname clearfix BC_showInputErrorBox">
+                        
+                        <dt><em class="BC_xing"></em>昵称</dt>
+                        
+                        
+                        <dd>
+                            <input name="nickname" class="Bc_input required validationBinded" style="width:234px;" id="nickname" maxlength="16" user-type="mobile" type="text">
+                        </dd>
+                    </dl>
+                    <dl class="item_name clearfix">
+                        <dt>真实姓名</dt>
+                        <dd>
+                            <input name="realname" id="realname" class="Bc_input validationBinded" style="width:234px;" type="text">
+                        </dd>
+                    </dl>
+                    <dl class="item_sex clearfix BC_showInputErrorBox">
+                        <dt><em class="BC_xing"></em>性别</dt>
+                        <dd class="BC_Validation_Radio required" fc="请选择">
+                            <input name="sex" value="1" id="sex" checked="checked" class="BC_radio" type="radio"><label for="sex" class="Dz_vm w40">男 </label>
+                            <input name="sex" value="2" id="sex2" class="BC_radio" type="radio"><label for="sex2" class="Dz_vm w40">女</label>
+                        </dd>
+                    </dl>
+                    <dl class="item_name clearfix">
+                        <dt>出生日期</dt>
+                        <dd>
+                            <input name="birthday" id="realname" class="Bc_input validationBinded" style="width:234px;" type="text">
+                        </dd>
+                    </dl>
+                    
+                   
+                    <dl class="clearfix">
+                        <dt>&nbsp;</dt>
+                        <dd>
+                            <a href="#" class="New_btn btn_c c1 BC_validation" id="btn_formmodify">保存</a>
+                        </dd>
+                    </dl>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<?php echo $__env->make("home.common.footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

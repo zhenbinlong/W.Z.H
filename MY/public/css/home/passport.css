@@ -1,0 +1,550 @@
+@charset "utf-8";
+/* CSS Document */
+.bc_footer{margin-top: 0;}
+.passport_wrap{ width:100%; min-width:1200px;}
+.lgbg{ background:url(../../images/home/loginreg.png) no-repeat;}
+.yhq{ background:url(../../images/home/passport/usericona.png) no-repeat;}
+#loginpwd{background: url(/images/home/loginbg.jpg) no-repeat center center;}
+.passport_pwdlogin{width: 384px; margin:0 auto; padding:110px 0 0px; overflow: hidden;}
+.passport_pwdlogin span.dllogo{display: block; margin: 0 0 30px; text-align: center;}
+.passport_pwdlogin span.dllogo img{width: 198px; height: 122px;}
+.passport_pwdlogin span.copyright{display: block; height: 59px; line-height: 59px; overflow: hidden; color: #FFF; font-family: Arial; font-size: 12px; text-align: center;}
+.passport_login{width: 384px; height: 484px; margin:0 0 275px;}/*background: url(../../../images/passport/logbg.png) no-repeat;*/
+.passport_login span.bgtop{display: block;width: 384px;height: 10px;}
+
+.passport_login span.tit{display: block;height: 52px; margin: 0 2px 80px; padding: 13px 0 0; border-bottom: 1px solid #E9E9E9; line-height: 52px; overflow: hidden; color: #999; font-size: 18px; text-align: center;}
+.passport_login span.txinfo{margin-bottom: 30px;}
+.passport_logincon{width: 300px; padding:4px 42px 0; overflow: hidden;}
+
+.passport_logincona{width: 384px;padding: 0;}
+.passport_logincona .passport_logininfo{margin:0 auto;}
+.passport_login .passport_logincona span.tit{padding: 0;}
+.passport_loginconb{padding-bottom: 20px;}
+.passport_logintab{width: 300px; height: 49px; margin: 0 0 30px;}
+.passport_logintab li{float: left; display: inline; width: 150px; height: 49px; border-bottom: 3px solid #ccc;}
+.passport_logintab li a{display: block; width: 150px; height: 49px; line-height: 49px; color: #999; font-size: 18px; text-align: center;}
+.passport_logintab li.on a{border-bottom: 3px solid #7647CC; color: #7644CC;}
+.passport_logininfo,.passport_otheruser{width: 300px; overflow: hidden;}
+.passport_logininfo li{float: left; display: inline; width: 300px; height:65px; overflow: hidden;}
+.passport_logininfo li span{display: block;}
+.passport_logininfo li span.spinput{width: 298px; height: 40px;}
+.passport_logininfo li span.spinput input{width: 278px; height: 20px; padding:9px 10px; border:1px solid #E9E9E9; border-radius: 2px; line-height: 20px; overflow: hidden; color: #999; font-size: 14px; font-family: "SimSun","Arial";}
+.passport_logininfo li span.spinput input:focus{color: #333;}
+.passport_logininfo li span.spinput input.redk{border:1px solid #FF5858;}
+.passport_logininfo li span.spinput input.txtyzm{width: 148px;}
+.passport_logininfo li span.spinput input.txtimgyzm{width: 128px;}
+.passport_logininfo li span.spinput a.btnghyzm{height: 40px;}
+.passport_logininfo li span.spinput a.btnghyzm em.word{margin:27px 0 0 5px;color: #999;font-family: SimSun;}
+.passport_logininfo li span.spinput a.btnghyzm i.yzmimg,.passport_logininfo li span.spinput a.btnghyzm i.yzmimg img{width: 100px;height: 40px;}
+.passport_logininfo li span.wrongts{width: 300px; height: 24px; line-height: 24px; overflow: hidden; color: #FF5757; font-size: 12px; font-family: SimSun;}
+.passport_logininfo li span.wrongts em.lgbg{display:inline-block;vertical-align: middle; width: 14px; height: 14px; margin: 0 5px 0 0; background-position: -165px 0;}
+a.btnann{width: 120px; height: 40px;background: #7647CC;border-radius: 2px; line-height: 40px; overflow: hidden; color: #FFF; font-family: SimSun; font-size: 14px; text-align: center;}
+a.btnann:hover{background: #8856DD;}
+.passport_logininfo li input.btnfsyzm:hover{background: #8856DD;}
+.passport_logininfo li input.wait{background: #8856DD; color: #CDB7EF;}
+.passport_logininfo input.btnlogin{display: block;width: 300px; height: 40px; border-radius: 2px; background: #7647CC; line-height: 40px; overflow: hidden; color: #F1F0F2; font-size:18px; text-align: center; }
+.passport_logininfo input.btnlogin:hover{background: #8856DD;}
+.passport_logininfo li input.ghimgyzm{height: 40px;}
+.passport_logininfo li input.ghimgyzm em{margin-top: 26px;color: #999;font-size: 12px;font-family: SimSun;}
+.passport_logininfo li input.ghimgyzm i{margin-right: 5px;}
+.passport_logininfo p.wjpwd{height: 46px; line-height: 46px; overflow: hidden;font-family: SimSun;font-size: 14px;}
+.passport_logininfo p.wjpwd span.autologin {color: #999;}
+.passport_logininfo p.wjpwd span.autologin input{display: inline-block;vertical-align: middle;width: 12px; height: 12px; margin-right: 8px; border:1px solid #ccc;position: relative;top: -1px;}
+.passport_logininfo p.wjpwd a.btnwjpwd {color: #7644CC;}
+.passport_logininfo span.tytk{display: block;margin-bottom: 10px;color: #666; font-family: SimSun; font-size: 12px;}
+.passport_logininfo span.tytk i{cursor: pointer;}
+.passport_logininfo span.tytk input.chctytk{margin-right: 8px;}
+.passport_logininfo span.otherts2{display: block; height: 40px; line-height: 45px; overflow: hidden; color: #999; font-size: 14px; font-family: SimSun;}
+.passport_logininfo a.btntg{display: block;height: 50px; margin: 28px 0 0; line-height: 50px; overflow: hidden; color: #999; font-size: 18px; text-align: center;}
+.passport_logininfo span.jiany{display: block;height: 36px; line-height: 18px; overflow: hidden; color: #999; font-size: 12px; font-family: SimSun; text-align: center;}
+.passport_logininfo span.tans{display: block;height: 40px; margin:6px 0 15px; overflow: hidden;text-align: center;}
+.passport_logininfo span.tans a{display: inline-block;width: 240px; height: 38px; border-top:1px solid #FFE68E; border-bottom: 1px solid #FFDD5E; border-radius: 2px; background: #FFCC00; line-height: 38px; overflow: hidden; color: #FFF; font-size: 16px; text-align: center;}
+.passport_logincona .passport_logininfob{margin-bottom: 145px;}
+.passport_otheruser span.otherts2 a.btnbangd{color: #7644CC;}
+.passport_otheruser{width: 300}
+.passport_otheruser span.syother{display: block;height: 52px; line-height: 51px; overflow: hidden; color: #ccc; font-size: 12px; text-align: center;}
+.passport_otheruser span.syother em{width: 96px; height: 1px; background: #E9E9E9; margin: 26px 0 0; overflow: hidden;}
+.passport_otheruser span.syother i{font-family: SimSun;}
+.passport_otheruser span.otherzh{display: block; height: 50px; margin: 0 0 5px; text-align: center;}
+.passport_otheruser span.otherzh a{display: inline-block;width: 50px; height: 50px;}
+.passport_otheruser span.otherzh a.taob{background-position: 0 0;margin-left: 0;}
+.passport_otheruser span.otherzh a.tengx{background-position: -55px 0;}
+.passport_otheruser span.otherzh a.sina{background-position: -110px 0;margin-right: 0;}
+.passport_otheruser span.otherzh a.weixin{background-position: 0 -146px;}
+.passport_otheruser span.otherzh a.mr{margin-right:33px;float: left;margin-left: 0;}
+
+.passport_otheruser span.otherts{display: block; height: 40px; line-height: 40px; overflow: hidden; color: #999; font-size: 12px; font-family: SimSun; text-align: center;}
+.passport_otheruser span.otherts a.btnreg{color: #7644CC;}
+.passport_emailcon{width: 310px; padding: 45px 0 0 41px; overflow: hidden;}
+.passport_emailcon span.emailts{display: block; margin: 0 0 35px; line-height: 24px; overflow: hidden; color: #999; font-size: 14px; font-family: SimSun; text-align: center;}
+.passport_emailcon span.emailts a.email{color: #7644C9;}
+.passport_emailcon span.btnys,.passport_tanc span.btnys{display: block; margin: 0 0 18px; overflow: hidden; text-align: center;}
+.passport_emailcon span.btnys a.btnann{display: inline-block; color: #FFF; font-family: Microsoft YaHei; font-size: 16px;}
+.passport_emailcon span.btnys a.again,.passport_tanc span.btnys a.again{margin-right: 8px;}
+.passport_emailcon span.emaildesc{display: block; padding:0 0 110px 24px; line-height: 18px; overflow: hidden; color: #999; font-size: 12px; font-family: SimSun;}
+.passport_emailcon span.emaildesc a{color:#7644c9;}
+.passport_sec{width: 330px;margin:0 auto;overflow: hidden;}
+.passport_sec span.emaildesc2{display: block; padding:0 0 70px 15px; line-height: 18px; overflow: hidden; color: #999; font-size: 12px; font-family: SimSun;}
+.passport_sec span.emaildesc2 a{color:#7644c9;}
+.passport_sec span.icon{display: block; margin:50px 0 5px;}
+.passport_sec span.icon img{display: block; margin:0 auto;}
+.passport_sec span.icon em{display: block; margin-top:3px; text-align: center;font-size:18px;color:#46c062;line-height:30px;font-family: Microsoft YaHei; }
+.passport_sec span.btnys {display: block; margin: 0 0 18px; overflow: hidden; text-align: center;}
+.passport_sec span.btnys a.btnann{display: inline-block; *display:inline;*zoom:1;color: #FFF; font-family: Microsoft YaHei; font-size: 16px;width:300px;}
+.passport_sec span.cg{display: block; margin: 0 0 40px; line-height: 24px; overflow: hidden; color: #999; font-size: 14px; font-family: SimSun; text-align: center;}
+/*内页弹框登录*/
+.con_loginnew{position: fixed;left:50%;top:50%;margin:-300px 0 0 -150px;z-index:10000;}
+.con_loginclose{display:block;position: absolute;right:-12px;top:-15px;width:30px;height:30px;background:url(../../../images/nav/login_close.png) no-repeat; }
+
+/*弹层css*/
+.passport_mask{position: fixed;display:none;left: 0; top: 0;width: 100%;height: 100%;background: #000;filter:alpha(opacity=50);opacity: 0.5;z-index:1000;}
+.passport_tanc{position: fixed;display:none;left: 50%;top: 50%;width: 818px;height: 418px;margin:-210px 0 0 -410px;border:1px solid #E9E9E9;background: #fff;border-radius: 2px;z-index:1001;}
+.passport_tanc span.tit{display: block;height: 58px;border-bottom:1px solid #E9E9E9;line-height: 58px;overflow: hidden;color: #333;font-size: 16px;text-align: center;background:#f5f5f5;}
+.passport_tanc a.btnclose{position: absolute;right: 9px;top: 9px;display: inline-block;width: 40px;height: 40px;background-position: -132px -50px;}
+.passport_tanc a.btnclose:hover{background-position: -174px -50px;}
+.passport_tanc a.btnclose:active{background-position: -174px -50px;}
+.passport_tcinfo{overflow: hidden;}
+.passport_bdsj{margin: 60px 0 0 205px;}
+.passport_tcinfo li{float: left;display: inline;width:614px;height: 52px;overflow: hidden;font-family: SimSun;}
+.passport_tcinfo li.last{margin-top: 20px;}
+.passport_tcinfo li span.tita{width: 70px;height:32px;padding-right: 10px;line-height: 32px;overflow: hidden;color: #666;font-size: 14px;text-align: right;}
+input.input1,input.input2,input.input1a,input.input2a,input.input3a{width: 228px;height: 20px;padding:5px 10px;background: #FFF;border:1px solid #E9E9E9;border-radius: 2px;line-height: 20px;overflow: hidden;color: #666; font-family: "Arial","SimSun"!important;}
+input.input1:focus,input.input2:focus,input.input1a:focus,input.input2a:focus{border:1px solid #ccc;}
+input.input2,input.input2a{width: 98px;}
+input.input1a,input.input2a,input.input3a{padding:9px 10px;}
+input.input3a{width: 118px;}
+a.fsyzm{width: 120px;height: 32px;margin:0 0 0 10px;background: #7647CC;line-height: 32px;overflow: hidden; color: #FFF;font-size: 14px;text-align: center;border-radius: 2px;}
+a.fsyzma{height: 40px; line-height: 40px;}
+a.fsyzm:hover,.passport_tcinfo li a.btnok:hover,.passport_tcinfo li a.btncancle:hover{background: #8856DD;}
+
+.passport_tcinfo li a.btnok,.passport_tcinfo li a.btncancle{font-family: Microsoft YaHei;font-size: 16px;}
+.passport_tcinfo li a.btnok{margin-right: 10px;}
+.passport_tcinfo li a.btnok2{width: 240px;}
+.passport_jiedian{width: 720px; margin: 52px auto 0; overflow: hidden;}
+.passport_jiedian li{position:relative; float: left;display: inline;width: 240px; height: 60px; overflow: hidden;font-family: SimSun;}
+.passport_jiedian li span{display: block;}
+.passport_jiedian li span.step{height: 18px;line-height: 18px;overflow: hidden;color: #E2E2E2;font-size: 12px;text-align: center;}
+.passport_jiedian li span.time{height: 16px;margin:0 0 3px;line-height: 16px;overflow: hidden;color: #E2E2E2;font-size: 12px;text-align: center;font-family: Arial;}
+.passport_jiedian li span.htline{position: absolute;left: 0;bottom: 14px;width: 240px; height: 5px;margin:5px 0 0;border-top:1px solid #E7E7E7; border-bottom: 1px solid #F0F0F0; background: #E2E2E2;}
+.passport_jiedian li em.lgbg{position: absolute;left: 50%;top: 50%;display:inline-block;width: 16px;height: 17px;margin:4px 0 0 -8px;background-position: -224px 0;}
+.passport_jiedian li.jdon span.step,.passport_jiedian li.jdon span.time{color: #78CC4E;}
+.passport_jiedian li.jdon span.htline{border-top:1px solid #96D377; border-bottom: 1px solid #D0E6C5; background: #78CC50;}
+.passport_jiedian li.jdon em.lgbg{background-position: -203px 0;}
+.passport_jiedian li.jdok span.step,.passport_jiedian li.jdok span.time{color: #BFE4AD;}
+.passport_jiedian li.jdok span.htline{border-top:1px solid #CAE5BC; border-bottom: 1px solid #E3EDDE; background: #BFE4AD;}
+.passport_jiedian li.jdok em.lgbg{background-position: -244px 0;}
+.passport_jiedian li.hs span.step{margin-top: 15px;}
+.passport_tanc span.warn{ position: absolute; left: 0; top: 58px; display: block; width: 100%; height: 38px;border-bottom: 1px solid #E9E9E9; background: #FFCC00; line-height: 38px; overflow: hidden; color: #FFF; font-size: 14px; text-align: center;}
+.passport_tanc span.warnts{display: block;margin-top: 35px; margin-bottom: 30px; line-height: 25px; overflow: hidden; color: #999; font-size: 14px; font-family: SimSun;text-align: center;}
+.passport_tanc span.warnts a{color: #7644C9;font-family: Arial;}
+.passport_tanc span.warnts2,.passport_tanc span.mtop55{margin-top: 55px;}
+.passport_tanc span.warnts2{ margin-bottom: 44px;}
+.passport_tanc span.backindex{display: block; text-align: center;}
+.passport_tanc span.backindex a.btnback{display: inline-block;font-family: Microsoft YaHei; font-size: 16px;}
+.passport_tanc span.btnys a.again,.passport_tanc span.btnys a.qianw{display: inline-block;font-family: Microsoft YaHei;}
+.passport_tanc span.tsdesc{display: block;margin: 18px 0 0 283px; line-height: 18px; overflow: hidden; color: #999; font-size: 12px; font-family: SimSun;}
+
+.passport_getyhq{padding:75px 0 30px;border-bottom:1px solid #E5E5E5;overflow: hidden;text-align: center;}
+.passport_getyhq span.yhqlogo{display: inline-block;width: 84px; height: 83px; background-position: 0 -22px;}
+.passport_getyhq span.yhqtsy{display: block;height: 36px; line-height: 36px; overflow: hidden; color: #2B2B2B;font-size: 18px; text-align: center;}
+.passport_getyhq span.yhprice{display: block;height: 45px; line-height: 45px; overflow: hidden; color: #FF5757; font-size: 20px; text-align: center;}
+.passport_getyhq span.yhprice em{font-size: 32px; font-family: Arial;}
+.passport_getyhq span.syqx{display: block;height: 30px; line-height: 30px; overflow: hidden; color: #999; font-size: 12px; font-family: SimSun;}
+.passport_findts{padding:36px 0 0; line-height: 24px; overflow: hidden; color: #7644CC; font-size: 14px; font-family: SimSun; text-align: center;}
+.passport_duihuan{padding:160px 0 0; overflow: hidden; text-align: center;}
+.passport_duihuan .dh,.passport_duihuan .dh a.btndh{display: inline-block;*display: inline;*zoom:1;}
+.passport_duihuan .dh{margin-bottom: 45px;}
+.passport_duihuan .dh a.btndh{width: 100px;font-family: SimSun;}
+.passport_duihuan span.yhqtsy{display: block; height: 24px; line-height:24px; overflow: hidden; color: #999;font-family: SimSun;font-size: 14px; text-align: center; }
+.passport_yhqsygz{width: 690px; margin: 30px 0 68px 60px; line-height: 30px; overflow: hidden; color: #666; font-size: 14px; font-family: SimSun;}
+.passport_btn{ overflow: hidden; text-align: center;}
+.passport_btn span.btn,.passport_erwmcon{display: inline-block;}
+.passport_btn span.btn a{font-family: Microsoft YaHei; font-size: 16px;}
+.passport_btn span.btn a.btnok{margin-right: 10px;}
+.passport_yhqsygz2{margin:50px 0 45px 108px;}
+.passport_erwm{overflow: hidden; text-align: center; width:490px;margin:0 auto;}
+.passport_erwmcon li{float: left;display: inline-block;margin: 0 30px; overflow: hidden;}
+.passport_erwmcon li i{display: block;height: 28px; line-height: 28px; overflow: hidden; color: #999; font-size: 14px; font-family: SimSun;}
+.passport_xgpwdtanc{width: 820px; height: auto; padding:0 0 38px;}
+.passport_xgpwdtanc li{height: 60px;}
+.passport_xgpwdtanc li a.yzmimg i,.passport_xgpwdtanc li a.yzmimg i img{width: 100px; height: 40px;}
+.passport_xgpwdtanc li a.yzmimg i{margin:0 10px;}
+.passport_xgpwdtanc li a.yzmimg em{margin-top: 27px;color: #999;}
+/*用户中心头部*/
+.uc_bgimg{ background:url(../../../images/passport/ucenter_icon.png) no-repeat;}
+.uc_header{height:80px;background:#fff;}
+.uc_header .uc_headnr{width: 1000px;height:80px;margin:0 auto;}
+.uc_headnr .uc_logo{float:left;width: 300px;margin-top: 8px;}
+.uc_headnr .uc_logo span{float:left;width: 117px;height: 60px;}
+.uc_headnr .uc_logo em{float:left;width: 88px;height: 40px;padding-left:29px; margin:19px 0 0 30px;border-left: 1px solid #8f8f8f;}
+.uc_headnr .uc_logo em img{margin-top: 3px;}
+.uc_headnr .uc_name{float:right;color:#666;line-height:86px;font-size: 12px;font-family:"Arial","宋体";}
+.uc_headnr .uc_name span{color:#ff5757;margin-right: 8px;}
+.uc_headnr .uc_name em a{color: #7a3fd0;margin-left: 8px;}
+/*用户中心基本信息*/
+.uc_user{height:160px;background:url(../../../images/passport/pr_ucbg.jpg) repeat-x;border-top: 1px solid #e9e9e9;font-family:"Arial","宋体";}
+.uc_user .uc_usernr{width:1000px;height:160px;margin:0 auto;}
+.uc_user .user_tx{float:left;width:168px;height: 110px;margin:26px 56px 0 0;border-right: 1px solid #8a87e4;}
+.uc_user .user_tx .user_txnr{position:relative;width:87px;height: 87px;margin-left: 36px;cursor:pointer;}
+.uc_user .user_tx .user_txnr img{width:87px;height: 87px;}
+.uc_user .user_tx .user_txnr .mask{display:block;position:absolute;left:0;top:0;width:87px;height: 87px;background-position:0 -121px; z-index: 3;}
+.uc_user .user_tx .user_txnr .revise{display:none;position:absolute;left:0;top:59px;width:100%;height:16px;line-height:16px;color:#ccc;text-align:center;background:#f9f9f9;z-index: 2;}
+.uc_user .user_tx .user_txnr:hover .revise{display: block;}
+.uc_user .user_tx .user_txt{display: block;margin-right: 10px;text-align: center;overflow:hidden;color: #fff;line-height:32px;font-size: 14px;}
+.uc_user .user_infoset{float:left;width:382px;height: 110px;margin:26px 28px 0 0;border-right: 1px solid #8a87e4;}
+.user_infoset .infoset{height: 30px;margin-top: 8px;}
+.user_infoset .infoset a{float:left;width:125px;height:30px;color:#fff;font-size: 12px;line-height: 30px;overflow: hidden;}
+.user_infoset .infoset a .icon{float:left;width:24px;height: 24px;margin:4px 10px 0 0;background:url(../../../images/passport/ucenter_icon.png) no-repeat;}
+.user_infoset .infoset a.set1{width: 106px;}
+.user_infoset .infoset a.set1 .icon{background-position:0 0;}
+.user_infoset .infoset a.set2 .icon{background-position:-29px 0;}
+.user_infoset .infoset a.set3 .icon{background-position:-58px 0;}
+.user_infoset .infojd{height:30px;margin:22px 56px 0 0;}
+.user_infoset .infojd .wsbtn{float: right;width:70px;height: 28px;background-position:-87px 0;line-height: 28px;font-size: 12px;text-align: center;color: #fff;}
+.user_infoset .infojd .wsbtn:hover{background-position:-162px 0;}
+.user_infoset .infojd .ws_load{float:left;height:30px;}
+.user_infoset .infojd .ws_load span.txt{display: block;height:16px;margin-bottom:5px;font-size: 12px;color: #fff;line-height:16px;}
+.user_infoset .infojd .ws_load span.loadnr{display: block;width:230px;height:4px;background:#fff;overflow: hidden;}
+.user_infoset .infojd .ws_load span.loadnr em{display: block;width:20%;height:4px;background:#ffcc00;}
+.uc_user .user_comlik{float:left;height: 110px;margin-top:26px;}
+.uc_user .user_comlik a{float: left;width:78px;height: 110px;overflow: hidden;margin:0 26px;}
+.uc_user .user_comlik a .icon{display:block;position:relative;width: 72px;height: 70px;margin:0 auto;padding-top:1px;background:url(../../../images/passport/ucenter_icon.png) no-repeat;background-position: 0 -36px;}
+.uc_user .user_comlik a:hover .icon{background-position: -75px -36px;}
+.uc_user .user_comlik a .icon i{display:block;width: 51px;height:46px;margin:10px auto 0;background:url(../../../images/passport/ucenter_icon.png) no-repeat;}
+.uc_user .user_comlik a .icon em{display:block;position:absolute;left:29px;bottom:-6px;width:15px;height:15px;background-position:-245px 0;color:#fff;font-size: 12px;text-align: center;}
+.uc_user .user_comlik a span.txt{display: block;height:20px;margin-top:8px;line-height: 20px;color:#ccc;text-align: center;}
+.uc_user .user_comlik a.one .icon i{background-position:-158px -47px;}
+.uc_user .user_comlik a.two .icon i{background-position:-224px -47px;}
+.uc_user .user_comlik a.three .icon i{background-position:-296px -47px;}
+.uc_user .user_comlik a.three{margin-right: 0;}
+/*用户中心主内容*/
+.uc_main{width:1000px;min-height:300px; margin:0 auto;padding-bottom:20px;background:url(../../../images/passport/uc_bg.jpg) repeat-y;}
+.uc_main .uc_mainl{ float: left; width:150px;padding-top: 34px;font-family:"Arial","宋体";}
+.uc_main .uc_mainl a{display: block;position:relative;height:42px;padding-right:30px;text-align:right;line-height: 42px;font-size:14px;color:#666;}
+.uc_main .uc_mainl a i{display: block;position:absolute;top:18px;right:18px;width:6px;height: 8px;background:url(../../../images/passport/ucenter_icon.png) no-repeat -272px 0;}
+.uc_main .uc_mainl a.cur{color:#ff5757;font-weight: bold;border-left:3px solid #ff5757;background:#f1f1f1;}
+.uc_main .uc_mainl a.cur i{background-position:-285px 0;}
+.uc_main .uc_mainnr{margin-left: 180px; padding-top:36px;}
+.uc_mainnr .uc_miantit{height:36px;border-bottom:1px solid #e9e9e9;color:#333;font-size: 16px;}
+.uc_mainnr .uc_miantit span{float:left;position:relative;top:3px;height:32px;padding:0 8px;line-height: 28px;border-bottom:3px solid #ccc;}
+/*头像列表*/
+.uc_mainnr .uc_txlist{overflow: hidden;}
+.uc_mainnr .uc_txlist a{float: left;width:130px;height: 130px;margin:0 36px 10px 0;font-family:"Arial","宋体";}
+.uc_mainnr .uc_txlist a .img{ position: relative; width:82px;height: 82px; margin:0 auto;}
+.uc_mainnr .uc_txlist a .img img{ width:82px;height: 82px;}
+.uc_mainnr .uc_txlist a .img span.mask{position: absolute;left:0;top:0;width:82px;height: 82px;background:url(../../../images/passport/tx_mask.png);background-position: 0 0;}
+.uc_mainnr .uc_txlist a.cur .img span.mask{background-position:-117px 0;}
+.uc_mainnr .uc_txlist a span.name{display: block;height:20px;margin-top:8px;line-height: 20px;color:#333;text-align: center;font-size: 14px;}
+.uc_txlist.mt{margin-top: 40px;}
+/*我的订单*/
+.uc_myorder{}
+.order_search{float:right;width:276px;height:30px;margin-top:5px;border:1px solid #e9e9e9;line-height:30px;border-bottom: none;background:#e9e9e9;}
+.order_search input{float:left;width:204px;height:30px;line-height:30px;padding:0 10px;border:none;background:#fff;}
+.order_search a.btn{display:block;height:30px;background:#e9e9e9;color:#777;font-size: 12px;text-align: center;font-family:"Microsoft Yahei";}
+.order_box{background:#fff;}
+.order_box .hd{height:30px;line-height:30px;background:#f6f6f6;color:#666;padding:0 20px;}
+.order_box .hd .num{width:180px;float:left;}
+.order_box .hd .time{float:left;}
+.order_box .hd .source{float:right;}
+.order_box .tb_main{width:100%;line-height:18px;border:1px solid #e6e6e6;}
+.order_box .tb_main .col1{padding:20px;}
+.order_box .tb_main .col2{width:130px;}
+.order_box .tb_main .col3{width:90px}
+.order_box .tb_main .col4{width:100px;}
+.order_box .tb_main thead{height:30px;line-height:30px;background:#f9f9f9;color:#999;text-align:left;font-family:"Arial","宋体";}
+.order_box .tb_main thead th{padding:0 20px;}
+.order_box .tb_main thead .time{margin-left:42px;}
+.order_box .tb_main tbody td{border-top:1px solid #f4f4f4;border-right:1px solid #f4f4f4;text-align:center;}
+.order_box .tb_main tbody td a{color:#7644c9;}
+.order_box .tb_main tbody td.col1{text-align:left;}
+.order_box .tb_main tbody td.col3{line-height:23px;}
+.order_box .tb_main tbody td.col4{border-right:none;}
+.order_box .tb_main tbody td.tit{border-right:none;color:#333;font-size:16px;font-weight:bold;text-align:left;padding:20px;}
+.order_box .tb_main tbody td .title{color:#7644c9;font-size:14px;margin-left:10px;word-wrap: break-word; break-word: break-all;}
+.order_box .tb_main tbody td .state{color:#666;}
+.order_box .tb_main tbody td .btn{height:32px;line-height:32px;background:#7644c9;border-radius:2px;color:#fff;padding:0 10px;margin-top:5px;display:inline-block;}
+.order_box .tb_main tbody td .btn:hover{background:#8855dd;}
+.order_box .tb_main tbody td .btn:active{background:#6e39bd;}
+.order_box .tb_main tbody td .price{font-size:14px;font-family:"Arial";}
+.order_box .tb_main tbody td.col1 a img{width:50px;height:50px;overflow:hidden;}
+.order_box .tb_main tbody td.col1 a{float:left;}
+.order_box .tb_main tbody td.col1 .title{ display:table; width:295px;height:52px;color:#666;font-size:14px;overflow:hidden;word-wrap: break-word; break-word: break-all;}
+.order_box .tb_main tbody td.col1 .title p{display: table-cell;  vertical-align: middle;}
+/*我的优惠券*/
+.uclist_btn{float:right;overflow: hidden;height:32px;position: relative;top:-6px;}
+.uclist_btn a{float:left; height:32px;margin-left:20px; padding:0 10px; background:#845CC6; line-height:32px; overflow:hidden; color:#FFF; font-size:12px; border-radius:2px;}
+.uclist_btn a:hover{ background:#7647C9;}
+.uclist_btn a em{ background:url(../../../images/user/usericona.png) no-repeat;margin-right: 5px;}
+.uclist_btn a.dh em{ width:12px; height:12px; margin-top:10px; background-position:0 0;}
+.uclist_btn a.gz em{ width:16px; height:16px; margin-top:8px; background-position:-17px 0;}
+.user_yhqinfo{ overflow:hidden; margin:25px 0 0;}
+.user_yhqdesc{ overflow:hidden;}
+.user_yhqdesc li{ position:relative; float:left; display:inline; width:398px; height:128px; border:1px solid #E9E9E9; margin:0 20px 20px 0;}
+.user_yhqdesc li em.bq{ position:absolute; right:27px; top:23px; display:inline-block; width:120px; height:92px;background:url(../../../images/user/usericona.png) no-repeat;}
+.user_yhqdesc li em.ysy{ background-position:-88px -22px;}
+.user_yhqdesc li em.ygq{ background-position:-214px -22px;}
+.user_yhqdesc li i.sytime{ position:absolute; left:0; bottom:0; display:inline-block; height:22px; padding:0 11px; background:#E9E9E9; line-height:22px; overflow:hidden; color:#999; font-family:SimSun;}
+.user_yhqxq{ width:400px; height:130px; margin:-1px 0 0 -1px; background:url(../../../images/passport/uc_couponbg.jpg) no-repeat top;}
+.user_yhqxq a{ display:block; width:360px; height:130px;}
+.user_yhqxq span.price{ display:inline-block; width:95px; margin:55px 0 0 20px; font-size:16px; color:#FF5757;}
+.user_yhqxq span.price em{ display:inline-block; margin:0 0 0 3px; font-size:26px; font-family:Arial; font-weight:bold;}
+.user_yhqxq p.sydesc{ width:200px; margin:38px 0 0; overflow:hidden;}
+.user_yhqxq p.sydesc span.tit{ display:block; height:40px; line-height:20px; overflow:hidden; color:#666; font-size:14px; font-family:SimSun;}
+.user_yhqxq p.sydesc span.sytime{ display:block; height:36px; line-height:36px; overflow:hidden; color:#999; font-family:SimSun;}
+.user_yhqxqhs{ background:url(../../../images/passport/uc_couponbg2.jpg) no-repeat top;}
+.user_yhqxqhs span.price,.user_yhqxqhs p.sydesc span.tit,.user_yhqxqhs p.sydesc span.sytime{ color:#CCC;}
+.uc_nrlist .P_4 {padding: 110px 0;text-align: center;font-family:"Arial","宋体";line-height:22px;}
+.uc_nrlist .P_4 span {display: block;font-size: 14px;margin-top: 20px;}
+.uc_nrlist .P_4 span a{color:#7644c9;}
+/*常用旅客*/
+.box-5{background:#fff;padding:20px;font-family:"Arial","宋体";}
+.box-5 .box5_hd{font-size:16px;margin-bottom:15px;overflow:hidden; }
+.box-5 .box5_shd{font-size:12px;margin-bottom:10px;padding-bottom:20px}
+.box-5 .box5_shd strong{float:left;color:#333;}
+.box-5 .box5_hd  b{ font-weight:normal; color:#333}
+.box-5 .box5_hd strong{float:left;color:#333;}
+.box-5 .box5_hd .box5_htit{font-size:12px;}
+.box-5 .box5_hd a{float:right;color:#7444cb;text-decoration:underline;}
+.box-5 .box5_cont{}
+.box-5 ol{height:183px;overflow-y:scroll;color:#999999}
+.box-5 ol li{line-height:20px;font-size:12px;}
+.box-5 .bgc_grey{background:#f5f4f6;}
+.box-5 .bgc_white{background:#fff;}
+.box-5 .pd20{padding:20px;}
+.box-5 .detail{background:#f5f4f6;padding:20px;}
+.box-5 .detail samp{color:#333333;vertical-align:middle;margin-right:10px;display:inline-block;font-family: Microsoft YaHei;width:72px;text-align:right}
+.box-5 .detail span{color:#777777;display:inline-block;margin-right:30px;vertical-align:middle;}
+.box-5 .detail .mt15{margin-top:15px}
+.box-5 .detail span a{color:#7644c9}
+.forms{ font-size:14px;}
+.forms dl{ margin-bottom:20px;overflow: hidden;}
+.forms dd,.forms dt{ float:left; line-height:30px; padding-right:10px;}
+.forms dd a{color:#7644c9}
+.forms dd a.edit{border-right:1px solid #eee; line-height: 16px;padding:0 15px 0 0;margin-right: 10px;}
+.forms dd.pad10{ padding-right:10px;}
+.forms dt{ width:90px; text-align:right}
+.forms dd .m_r10{ display:inline-block; margin-right:5px;}
+.forms .xinzeng{margin-top: 30px;}
+.forms .view{margin-top: 20px; }
+.forms .view .guestedit{margin-bottom: 10px;}
+.forms .view dl{margin-bottom:5px;}
+.user_form .date_pr{padding-right:7px}
+.user_form .w40{width:40px}
+.user_form .w42{width:42px}
+.user_form .mt0{margin-bottom:0px}
+.user_form dd a{color:#7644c9}
+.user_form dd{color:#333;}
+.user_form dt{color:#666;}
+.user_form .e_name{width:44px}
+.user_form .BC_Control_Select_original select{width:67px !important;}
+.user_form .BC_Control_Select_original span{width:36px !important;}
+.user_form .year select{width:95px !important;}
+.user_form .year span{width:65px !important;}
+.user_form .nations select{width:246px !important;}
+.user_form .nations span{width:214px !important;}
+.user_form .id_type select{width:76px !important;}
+.user_form .id_type span{width:46px !important; overflow:hidden}
+.user_form .area select{width:130px !important;}
+.user_form .area span{width:98px !important;}
+.user_form .add_zj{color:#7644c9;font-size:14px}
+.user_form .add_zj span{border:1px solid #7644c9;display:inline-block;height:20px;width:20px;line-height: 19px;vertical-align: middle;*vertical-align:auto;text-align: center;font-size: 20px;}
+.user_form .fb{font-weight:bold}
+.user_form .add_lk{text-align:center}
+.user_form a.edit{border-right:1px solid #dcdcde;padding-right:15px;}
+.user_form a.rb{text-decoration:none }
+.user_form a.pl15{padding-left:15px}
+.user_form .gray_bg{width:80px;height:6px;background:#dcdcde;}
+.user_form .pr{padding-right:3px}
+.user_form .pr p{width:80px;text-align:center;font-size:12px}
+.user_form .pink{background:#f77468}
+.user_form .yellow{background:#ffae00}
+.user_form .green{background:#5fd46b}
+.user_form .pr10{padding-right:10px}
+.user_form .d_addr{font-size:12px;color:#999;margin-left:520px}
+.user_form dd.info{width:600px}
+.guestedit a{font-size: 12px;}
+/*下拉菜单*/
+.BC_Control_Select {position:relative;width:100px;height:30px; }
+.BC_Control_Select span {position:relative;height:30px;line-height:30px;background:#fff;border:1px solid #cecbce;text-indent:10px;padding-right:20px;display:block;cursor:pointer;}
+.BC_Control_Select span b {font-weight:normal;}
+.BC_Control_Select span i {position:absolute;z-index:10;right:5px;top:12px;width:9px;height:6px;}
+.BC_Control_Select .list {position:absolute;z-index:11;left:0;top:27px;min-width:100%;background:#fff;border-top:0;display:none;overflow: hidden;}
+.BC_Control_Select .list .box {min-width:100%;max-height:110px;border:1px solid #cecbce;overflow-y:auto;}
+.BC_Control_Select .list  a {height:22px;line-height:22px;white-space:nowrap;padding:0 20px 0 10px;display:block;}
+.BC_Control_Select .list  a:hover {background:#ccc;text-decoration:none;}
+.BC_finput{height:30px; line-height:30px; border:1px solid #dcdcde; box-shadow:inset 1px 2px 1px #f5f5f5}
+.BC_Control_Select_original {position:relative;_width:100px;height:32px;}
+.BC_Control_Select_original span {position:absolute;z-index:0;left:0;top:0;height:30px;line-height:30px;background:#fff;border:1px solid #cecbce;padding:0 20px 0 10px;display:block;cursor:pointer;overflow:hidden;}
+.BC_Control_Select_original span b {font-weight:normal;}
+.BC_Control_Select_original span i {position:absolute;z-index:10;right:8px;top:13px;width:9px;height:6px; background-position:-43px -9px;}
+.BC_Control_Select_original select {position:relative;z-index:1;height:32px;margin:0 0 0 1px;}
+.New_btn.c1:hover{background:#8855dd;}
+/*常用联系人*/
+.uc_linkman{overflow:hidden}
+.uc_linkman .uc_lmlist{border-bottom: 1px solid #e9e9e9;font-family:"Arial","宋体";}
+.uc_nrlist .box5_cont dd.fb{width:80px;font-family: "Microsoft Yahei";font-size:16px;color:#666;}
+.uc_nrlist .box5_cont dd.info{font-size:12px;color:#666;}
+.uc_nrlist .box5_cont #addresslist dl{position: relative;}
+.uc_nrlist .box5_cont #addresslist dl .edit,.uc_nrlist .box5_cont #addresslist dl .del{position: absolute;top: 36px;font-size: 12px;display: block;height: 16px;line-height:16px;padding:0 10px;}
+.uc_nrlist .box5_cont #addresslist dl .edit{right:35px;}
+.uc_nrlist .box5_cont #addresslist dl .del{right:0px;text-decoration: none;}
+.uc_nrlist .box5_cont #addresslist dl .d_addr{position: absolute;top:5px;font-size: 12px;display: block;height: 16px;line-height:16px;right:0px;}
+/*我的评论*/
+.order_box .tb_main.uc_tabpl{margin-top: 10px;}
+.order_box .tb_main.uc_tabpl th.z1{width:450px;text-align: left;}
+.order_box .tb_main.uc_tabpl th.z2{width:350px;text-align: center;}
+.order_box .tb_main.uc_tabpl td.col2{padding:0 25px;text-align: left;font-size: 14px;color:#999;}
+.order_box .tb_main.uc_tabpl td.col2 a.btn{display: block;margin:0 auto; width: 76px; text-align: center;font-size: 12px;}
+/*我的咨询*/
+.uc_nrlist .hd h2 { font-size: 16px; color: #333; font-weight:normal}
+.uc_nrlist .bd .item { border-bottom: 1px solid #dcdcde; padding: 20px 0 20px; overflow: hidden;}
+.uc_nrlist .bd .item h3 { font-size: 14px; color: #7644c9; overflow: hidden;}
+.uc_nrlist .bd .item .zixun{overflow: hidden;}
+.uc_nrlist .bd .item .zixun .content { font-size: 14px; color: #333; font-weight: bold;  }
+.uc_nrlist .bd .item .reply { color: #666; overflow: hidden;}
+.uc_nrlist .bd .item .reply .content { font-size: 14px; line-height: 18px;overflow: hidden; }
+.uc_nrlist .bd .item .time { font-size: 12px; color: #666; margin: 20px 0 10px; }
+/*基本信息*/
+.forms dl.mt0 {margin-bottom: 0;}
+.uc_nrlist .box5_cont{min-height:500px;margin-top: 20px;font-size: 14px;font-family:"Arial","宋体";}
+.Bc_input{ border:1px solid #dadada;  background:#FFF;padding:8px 5px; font-size:14px; color:#777}
+.BC_input_focus{background:#fff;border:1px solid #dadada;padding:8px 5px; font-size:14px; color:#777;}
+.BC_input_focus:focus{border:1px solid #9c7bc6;background:url(../../../images/common/input_shadow.gif) no-repeat;}
+.Bc_input.Lose_focus{ color:#999}
+.BC_Input_error,.Validform_error { background:#FFE7E7; border:1px; border:1px solid #f00}
+.P_LayerInputError {position:absolute;z-index:10000;line-height:35px;text-indent:10px;font-size:14px;background:#FFE7E7;border:1px solid #ff9595;}
+.BC_tishi.t01,.BC_tishi.t01 em{ background:url(../../../images/forms/tishi.png) no-repeat; display:inline-block; height:34px; color:#FFF;padding-left:24px;  }
+.BC_tishi.t01 em{ background-position: right -34px; padding-right:15px; padding-left:0;line-height:34px; }
+.BC_tishi.t02 span{ vertical-align:middle; display:inline-block}
+.BC_tishi.t02 span.text{ margin-left:10px;}
+.user_form .year select{width:95px !important;}
+.user_form .year span{width:65px !important;}
+.user_form .nations select{width:246px !important;}
+.user_form .nations span{width:214px !important;}
+.user_form .id_type select{width:76px !important;}
+.user_form .id_type span{width:46px !important; overflow:hidden}
+.user_form .area select{width:130px !important;}
+.user_form .area span{width:98px !important;}
+.BC_Control_Select {position:relative;width:100px;height:30px; }
+.BC_Control_Select span {position:relative;height:30px;line-height:30px;background:#fff;border:1px solid #cecbce;text-indent:10px;padding-right:20px;display:block;cursor:pointer;}
+.BC_Control_Select span b {font-weight:normal;}
+.BC_Control_Select span i {position:absolute;z-index:10;right:5px;top:12px;width:9px;height:6px;}
+.BC_Control_Select .list {position:absolute;z-index:11;left:0;top:27px;min-width:100%;background:#fff;border-top:0;display:none;overflow: hidden;}
+.BC_Control_Select .list .box {min-width:100%;max-height:110px;border:1px solid #cecbce;overflow-y:auto;}
+.BC_Control_Select .list  a {height:22px;line-height:22px;white-space:nowrap;padding:0 20px 0 10px;display:block;}
+.BC_Control_Select .list  a:hover {background:#ccc;text-decoration:none;}
+.BC_finput{height:30px; line-height:30px; border:1px solid #dcdcde; box-shadow:inset 1px 2px 1px #f5f5f5}
+.BC_Control_Select_original {position:relative;_width:100px;height:32px;}
+.BC_Control_Select_original span {position:absolute;z-index:0;left:0;top:0;height:30px;line-height:30px;background:#fff;border:1px solid #cecbce;padding:0 20px 0 10px;display:block;cursor:pointer;overflow:hidden;}
+.BC_Control_Select_original span b {font-weight:normal;}
+.BC_Control_Select_original span i {position:absolute;z-index:10;right:8px;top:13px;width:9px;height:6px; background-position:-43px -9px;}
+.BC_Control_Select_original select {position:relative;z-index:1;height:32px;margin:0 0 0 1px;}
+.uc_nrlist .box5_cont .Dz_vm{margin-right: 20px;}
+/*账号信息*/
+.uc_nrlist{min-height: 500px;}
+.uc_nrlist .uc_idinfo{margin-top: 40px;font-family:"Arial","宋体";font-size: 14px;}
+.uc_nrlist .uc_idinfo li{height:44px;margin:20px 0;line-height:42px;}
+.uc_nrlist .uc_idinfo li em.icon{float:left;height:44px;width:45px;background:url(../../../images/passport/ucenter_icon.png) no-repeat;}
+.uc_nrlist .uc_idinfo li em.icon.yes{background-position:0 -262px;}
+.uc_nrlist .uc_idinfo li em.icon.no{background-position:-52px -262px;}
+.uc_nrlist .uc_idinfo li em.tit{float:left;color:#666;margin-left:20px;}
+.uc_nrlist .uc_idinfo li em.txt{float:left;color:#ccc;margin-left:40px;}
+.uc_nrlist .uc_idinfo li em.value{float:right;color:#333;font-size:16px;}
+.uc_nrlist .uc_idinfo li a.czbtn{float:right;width:100px;height:30px;margin:6px 0 0 20px;line-height:30px;font-size: 14px;background:#7644cc;color:#333;text-align:center;font-size:16px;color:#fff;border-radius: 2px;}
+.uc_nrlist .uc_idinfo li a.czbtn:hover{background:#8855dd;}
+
+.logintip{line-height:30px;display: block;margin:2px 0;color: #999;font-family: SimSun;font-size: 12px;}
+.logintip a{color:#7644c9;text-decoration: none;}
+
+
+.passport_tanc{/*display: block;*/}
+
+/*申请退款*/
+.passport_refund{height: auto;margin-top: -290px;}
+.passport_refund .passport_jiedian{margin-top: 24px;}
+.passport_refundyy{margin:28px 0 0 212px;overflow: hidden;}
+.passport_refundyy li{float: left;display: inline;width:100%;line-height: 32px;overflow: hidden;color: #666;font-size: 14px;font-family: SimSun;}
+.passport_refundyy li span.leftinfo{width:86px;text-align: right;}
+.passport_refundyy li span.leftinfo em{margin-right:7px;color: #FF5757;font-size: 16px;font-weight: bold;}
+.passport_refundyy li span.tkje{width: 76px;height: 32px;line-height: normal;}
+.passport_refundyy li .tkyy{width: 240px;}
+.passport_refundyy li .BC_Control_Select_original span{padding:0 78px 0 10px;border:1px solid #E9E9E9;}
+.passport_refundyy li span.ts{display: block;height: 20px;padding-left:86px;line-height: 20px;overflow: hidden;color: #ccc;font-size: 12px;clear: both;}
+.passport_refundyy li span.count{height: 32px;margin-left:8px;line-height:normal;color:#FF5757;font-size: 14px;font-family: SimSun; }
+.passport_refundyy li span.count i{font-family: Arial;}
+.passport_refundyy li input.txtsm{width: 358px;height: 30px;padding: 0 10px;border:1px solid #e9e9e9;line-height:30px;overflow:hidden;color: #666;font-size: 14px;font-family: SimSun;}
+.btnsubmit{display: block;width: 240px;height: 40px;margin:10px 0 10px 298px;background: #7647C9;line-height: 40px;overflow: hidden;color: #FFF;font-size: 16px;text-align: center;border-radius: 4px; }
+.btnsubmit:hover{background: #8856dd;}
+.passport_question{background: #f9f9f9;overflow: hidden;}
+.passport_question span.cjwt{display: block;height: 34px;border-bottom: 1px solid #E9E9E9;background: #FFF;}
+.passport_question span.cjwt em{float: left;height:32px;margin:0 0 0 40px;padding:0 3px;border-bottom:3px solid #ccc;line-height: 32px;color: #333;font-size: 14px;font-family: SimSun;}
+.passport_questioncon{margin:18px 0 0 40px;overflow: hidden;}
+.passport_questioncon li{float: left;display: inline;width: 100%;height: 52px;margin: 0 0 16px;overflow: hidden;}
+.passport_questioncon li span.que,.passport_questioncon li span.ans{display:block;height:22px;padding: 2px 0;line-height: 22px;overflow: hidden;font-family: SimSun;}
+.passport_questioncon li span.que{color: #999;font-size: 14px;}
+.passport_questioncon li span.que em,.passport_questioncon li span.ans em{float:left;margin-right: 10px;}
+.passport_questioncon li span.que em{width: 22px;height: 22px;background-position: 0 -101px;}
+.passport_questioncon li span.ans{color: #666;font-size: 12px;}
+.passport_questioncon li span.ans em{width: 22px;height: 22px;background-position: -28px -101px;}
+.passport_caiwsh{width: 720px;margin:28px auto 10px;overflow: hidden;}
+.passport_caiwsh table.shenh{border:2px solid #e9e9e9;}
+.passport_caiwsh table.shenh tr td{height:30px;line-height:30px;overflow:hidden;padding: 0 10px;border-bottom: 1px solid #e9e9e9;border-right: 1px solid #e9e9e9;color: #666;font-size: 12px;font-family: SimSun;}
+.passport_caiwsh table.shenh tr td em{color: #999;}
+.passport_caiwsh table.shenh tr td i.fonts{font-family: Arial;}
+.passport_caiwsh table.shenh tr td i.red{color: #ff5757;}
+.passport_caiwsh table.shenh tr td.ltd{width: 337px;}
+.passport_caiwsh table.shenh tr td.rtd{width: 338px;}
+.passport_caiwsh table.shenh tr td.td2px{border-bottom: 2px solid #e9e9e9;}
+.passport_tksuccess{margin:28px 0 0;overflow: hidden;text-align: center;}
+.passport_tksuccess span.tkcg{display: inline-block;*display: inline;*zoom:1;height: 32px;padding:5px 0;line-height: 32px;overflow: hidden;color: #333;font-size: 26px;}
+.passport_tksuccess span.tkcg em{float:left;width: 32px;height: 32px;margin-right:15px;background-position: -57px -101px;}
+.passport_tkje{overflow: hidden;}
+.passport_tkje p{display: inline-block;*display: inline;*zoom:1;height: 36px;line-height: 36px;overflow: hidden;color: #666;font-size: 14px;font-family: SimSun;}
+.passport_tkje p span.tkje{margin-right: 16px;}
+.passport_tkje p span.tkje i,.passport_tkje p span.tkje em{color: #FF5757;}
+.passport_tkje p span.tkje em,.passport_tkje p span.tkbh em{font-family: Arial;}
+.passport_tkje p span.tkbh em{color: #666;}
+/*预上线兼容*/
+.uc_mainnr .user_yhqinfo{width:100%;}
+.uc_mainnr .user_yhqdesc{width:100%;}
+.uc_mainnr .user_yhqdesc li{margin:0 10px 20px 0;}
+.uc_mainnr .box_right {width:820px !important;padding-left: 0 !important;}
+.uc_mainnr .box_right .user_form .box-5.YH{padding-top: 0;}
+.uc_mainnr .box_right .box-5{padding:20px 0;}
+.uc_mainnr .uc_nrlist{padding:0 !important;}
+.uc_mainnr .box_right .evaluate_list{margin-top: 30px;}
+.forms dd span.warn{font-size: 12px;}
+#user_center .uc_mainnr .P_4{padding: 110px 0 225px;}
+.uc_mainnr .user_visa_order .box .nr{border-bottom: none;}
+.uc_mainnr .user_visa_order .box .nr table{position: relative;}
+.uc_mainnr .user_visa_order .box .hd{line-height:30px;}
+/*屏幕高度小于1000*/
+/*.passport_pwdlogin.smallh{padding:10px 0 0px;}*/
+@media screen and (min-device-height:320px) and (max-device-height:950px){
+.passport_pwdlogin{padding:10px 0 0px;}
+}
+
+/*礼品卡*/
+.uc_main a.addcard{display: block;margin:40px auto 10px;width:120px;height:40px;background:#ff5757;color:#fff;font-size:16px;text-align:center;line-height:40px;border-radius:2px;}
+.passport_tanc.pop_newcard {height:250px;margin:-25px 0 0 -410px;}
+.pop_newcard .newcard{padding:60px 0 0; overflow: hidden; text-align: center;}
+.pop_newcard .newcard .dh{margin-bottom: 30px;}
+.pop_newcard .newcard .dh input{display: inline-block;*display: inline;*zoom:1;margin:0 30px 0 15px;}
+.pop_newcard .newcard .dh{font-size:14px;font-family:"宋体";}
+
+/*申请退款*/
+.order_box .tb_main tbody td a.sqtk{display:inline-block;height: 22px;line-height: 22px;overflow: hidden;color: #7644CC;}
+.order_box .tb_main tbody td a.jjtk,.order_box .tb_main tbody td a.zztk{color: #999;cursor: default;}
+
+
+/*旅行管家列表*/
+.order_box .tb_main thead .cjtime .time{margin-left: 0;}
+.order_box .tb_main tbody td.col1 a.lxgj img{border:1px solid #E9E9E9;}
+.order_box .tb_main thead th.cjtime{padding:0 30px;}
+.order_box .tb_main thead th.count{border-left: 1px solid #f4f4f4;}
+.order_box .tb_main tbody td .statea,.order_box .tb_main tbody td .findxq{font-family: SimSun;}
+.order_box .tb_main tbody td.col1a{padding: 15px 30px;}
+.order_box .tb_main .col120{width: 120px;}
+/*服务条款弹框*/
+.scrmask{display:none;position: fixed; z-index: 9999; left: 0px; top: 0px; width: 100%; height:100%; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.7; filter:alpha(opacity=70);}
+.sevrule{display:none;position: fixed; z-index: 10000; left: 50%; top: 50%; width: 692px; height: 528px; margin-left: -346px; margin-top: -264px;}

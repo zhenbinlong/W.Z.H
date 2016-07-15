@@ -1,0 +1,68 @@
+<?php echo $__env->make("admin.layout.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<title>添加用户</title>
+
+
+<!--前端验证未作-->
+
+
+
+<link rel="stylesheet" href="/css/admin/reset.css">
+<link rel="stylesheet" href="/css/admin/style.css" media="screen" type="text/css" />
+
+<body>
+    <div id="window" style="display:none;">
+        <div class="page page-front">
+            <div class="page-content">
+                <form method="post" action="/Admin/group/<?php echo e($group->id); ?>">
+                    
+                    
+                    <div class="input-row">
+                        <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>" />
+                        <input type="hidden" name="_method" value="PUT" />
+                        <label class="label fadeIn">名称：</label>
+                        
+                        <input type="text" name="title" value="<?php echo e($group->title); ?>" class="input fadeIn delay1"/>
+                    </div>
+                     <div class="input-row">
+                       
+                        <label class="label fadeIn">权限：</label>
+                         <?php foreach($rules as $key=>$rule): ?>
+                        <?php if($key%2==0): ?> <p> <?php endif; ?>
+                           <input type="checkbox" name="rules[]" value="<?php echo e($rule->id); ?>" <?php if(in_array($rule->id,explode(",",$group->rules))): ?> checked <?php endif; ?>><?php echo e($rule->title); ?>&nbsp;&nbsp;
+                        <?php if($key%2==1): ?></p> <?php endif; ?>
+                        <?php endforeach; ?>
+                        
+                    </div>
+                    
+              
+                    <div class="input-row perspective">
+                        <p><input class="button load-btn fadeIn delay4" type="submit" value="修改" /></p>
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+      
+    </div>
+   
+    
+    
+    
+    <script type="text/javascript" src="/js/admin/index_create.js"></script>
+    <div style="text-align:left ;width:300px ;height:500px;border:1px  red;float:left;margin-left: 400px;margin:80px 0 0 400px">
+    <div>
+        <?php echo e(session("info")); ?>
+
+        <ul>
+            <?php if(count($errors) > 0): ?>
+                <?php foreach($errors->all() as $e): ?>
+                    <li style="width:200px;height:30px;color:red;"><?php echo e($e); ?></li>
+                    
+                <?php endforeach; ?>
+            <?php endif; ?>
+         </ul>
+    </div>
+    </div>
+    
+</body>
+<?php echo $__env->make("admin.layout.foot", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

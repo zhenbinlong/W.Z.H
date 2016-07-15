@@ -1,0 +1,50 @@
+<?php echo $__env->make("admin.layout.head", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<link type="text/css" rel="stylesheet" href="<?php echo e(asset('/bootstrap/css/bootstrap.css')); ?>" />
+<div style="color:blueviolet;">
+    <form action="<?php echo e(url('/Admin/round/store')); ?>" method="post" name="fm">
+        
+            <input type="hidden"  name="_token" value="<?php echo e(csrf_token()); ?>">
+            
+    </form>
+</div>
+<div class="center">
+    
+
+
+
+    <div class="tableMain" >
+        <table class="right-table" width="99%"  border="0px" cellpadding="0" align="center" cellspacing="0" >
+            <tbody >
+
+                <tr >
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>图片</th>
+                    <th>是否使用</th>
+                    
+                    <th id="clearTDrightBorder">操作</th>
+                </tr>
+                <?php foreach($runs as $run): ?>
+                <tr>
+                    <td><?php echo e($run->rid); ?></td>
+                    <td><?php echo e($run->rname); ?></td>
+                    <td><img src="<?php echo e($run->rpicture); ?>" width="150px" height='100px'></td>
+                    <td><input type="radio" rid="<?php echo e($run->rid); ?>" name="ruse.<?php echo e($run->rid); ?>" value="启用"  <?php if($run->ruse == "启用"): ?> checked <?php endif; ?>/>启用
+                        <input type="radio" rid="<?php echo e($run->rid); ?>" name="ruse.<?php echo e($run->rid); ?>" value="禁用" <?php if($run->ruse == "禁用"): ?> checked <?php endif; ?> />禁用
+                    <td><a href="/Admin/round/<?php echo e($run->rid); ?>/edit">编辑</a> <a href="<?php echo e(url('/Admin/round/delete/'.$run->rid)); ?>">删除</a></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <p>
+            <?php echo $runs->render(); ?>
+
+        </p> 
+    </div> 
+
+          
+</div>
+<script src="/js/admin/round_index.js"></script>
+ 
+<?php echo $__env->make("admin.layout.foot", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+

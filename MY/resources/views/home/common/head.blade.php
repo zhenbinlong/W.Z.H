@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>用户中心</title>
+<meta name="keywords" content="旅游,旅游网,旅行,签证,出国旅游,国外旅游,出境游,境外旅游">
+<meta name="description" content="百程旅行网作为中国领先的出国旅游服务公司,已为数百万出境游客提供签证办理、定制、自由行、跟团游、WIFI、门票等国外旅游服务，境外旅游当然首选百程旅行网。">
+<!--公共样式-->
+    <link type="text/css" rel="stylesheet" href="/css/home/public.css">
+<!--公共样式-->
+<link type="text/css" rel="stylesheet" href="/css/home/passport.css">
+<script src="/js/home/hm.js"></script><script src="/js/home/analytics.js" async="" type="text/javascript"></script><script src="/js/home/gtm.js" async=""></script><script>
+var dataLayer = dataLayer || [];
+</script>
+<!--公共JS begin-->
+<script src="/js/home/jquery.js"></script>
+<script src="/js/home/fun.js"></script>
+<!--公共JS end-->
+
+</head>
+<body id="user_center">
+
+    <!-- 用户中心头部 -->
+<div class="uc_header">
+    <div class="uc_headnr">
+        <div class="uc_logo">
+            <a href="http://www.baicheng.com/"><span><img src="/images/home/pr_logo.jpg"></span></a>
+            <em><img src="/images/home/pr_logotxt.jpg"></em>
+        </div>
+        <div class="uc_name"><span>Hi,<a href="/Home/user">{{session("homeUserData")->uname}}</a></span>欢迎回百程！<em><a href="javascript:void(0);" onclick="_CommonLogout();">[退出]</a></em></div>
+    </div>
+</div>
+<!-- 用户中心导航-->
+
+
+<!--sliderbanner end-->
+
+
+
+
+
+<!-- 用户中心 主内容-->
+<div class="uc_main">
+  <!--左侧导航-->
+  <!--左侧导航-->
+<div class="uc_mainl">
+  <a href="/Home/user/complete" class="cur">完善个人资料<i></i></a>
+  
+  
+  <a class="cur" href="/Home/user/order/{{ session("homeUserData")->uid}}" >我的订单<i></i></a>
+  
+  <a href="">我的优惠券<i></i></a>
+  <a href="http://passport.baicheng.com/passenger/show">常用旅客<i></i></a>
+  <a href="http://passport.baicheng.com/address/show">常用联系人<i></i></a>
+  <a href="http://passport.baicheng.com/usercomment/commentlist">我的评价<i></i></a>
+  <a href="http://passport.baicheng.com/userconsult/consultlist">我的咨询<i></i></a>
+</div>
